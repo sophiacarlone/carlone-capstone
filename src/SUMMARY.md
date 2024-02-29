@@ -18,8 +18,6 @@
     - [Logs](Oct23/Logs.md)
 - [November 2023](Nov23/summary.md)
     - [Logs](Nov23/Logs.md)
-- [December 2023](Dec23/summary.md)
-    - [Logs](Dec23/Logs.md)
 - [January 2024](Jan24/summary.md)
     - [Logs](Jan24/Logs.md)
 - [February 2024](Feb24/summary.md)

@@ -1,1 +1,109 @@
 # Logs
+Scar — 02/01/2024 1:05 PM
+adjustments to the ping bot:
+specific channel
+say that an ip was pinged
+less over night
+channel = client.get_channel(12324234183172)
+await channel.send('hello')
+https://discordpy.readthedocs.io/en/stable/faq.html#how-do-i-send-a-message-to-a-specific-channel
+128.153.221.225
+
+Scar — 02/02/2024 1:13 AM
+My bot is spamming
+I was able to get it into a certain channel
+Ill move it to my own and see why it doesnt ping ip addresses
+
+Scar — 02/08/2024 1:30 PM
+There are still problems with the purchasing for COSI. Specifically, COSI wants to get some universal rails in order to mount everything, but we dont know who can even put in the orders
+the new lab directors are going to email OIT and get internet access moved to COLO. We want to keep the momentum of those who want to make the big move
+
+Scar — 02/12/2024 4:19 PM
+Add a paragraph about COSI
+Talk a bit about the surge and talk more about what I did and why I choose to do that
+Make an executive summary
+talk about ping bot
+in challenges, show how I had to be more flexible
+give myself more credit, this si my legacy
+explain more on topology and say how the power outages recently did not stop us
+
+Scar — 02/14/2024 4:29 PM
+Using mdbook for the first time for my logs
+
+Scar — 02/15/2024 3:57 PM
+Orange-blue direct link to 144 net
+
+Scar — 02/15/2024 4:07 PM
+Green brown sc
+
+Scar — 02/15/2024 4:41 PM
+So, what was said above was for documentation purposes. it shows which link goes where, either to the 144 net (and the internet) or to the hill
+Juno was at OIT help desk when they told him that COSI got the link. He asked everyone in cosi at the time if they wanted to go, and only he and I went.
+We got down there and we were having trouble because even with a new transciever and fiber cable, nothing was working. No blinky lights, so Juno called OIT.
+They came down there, and we debugged. It was OIT's transciever that was broken. Oh well
+we got blinky lights and everything is ready for the great move besides getting rails
+which, by the way, we are trying to figure out the best time, but havent found it yet. Especially since my capstone is due march 1st
+Also, I got mdbook in a container on tiamat to host my logs online.
+there was some diffculty with the working directory in the Dockerfile, but I stole the one from the cosi book and it worked. I could not recreate the error to expect it
+
+Scar — 02/16/2024 9:33 PM
+too much rebooting on taldos when I was trying to test my pingbot
+
+Scar — 02/18/2024 5:43 PM
+We unplug our internet link in the server room and went down to colo to plug in the net link there.
+We got blinky lights on both the uplink to sc and from the connection oit provided to us, and we were able to confirm mirror was up, that means we are ready to move
+<image src="../media/FCOLO.jpg"  controls></image>
+
+Scar — 02/20/2024 5:28 PM
+The great cosi move of 2024 has started
+7 people are helping
+We took out mirror, kasper, and taldos. We noticed that cables were missed labelled
+I personally am going to move things to colo
+
+Scar — 02/20/2024 6:45 PM
+Going smoothly till we couldnt ping mirror
+"Copper" appearently means ethernet
+Cat8 is gold plated
+
+Scar — 02/20/2024 9:30 PM
+Here is the summary of what went down now that it is over for tonight
+The colo team got mirror, the kvm, taldos and kasper in physically. (with the right connections?) We knew we needed to make sure things are connected, and to make sure the switch->kasper fiber cables were in the right ports for the bridge 
+There was some issue where mirror can be pinged but not sshd into on Cary's laptop
+I did not bring my laptop, so I did not remember the password, and when we did get it, it did not seem to work for some reason
+we tried the management port, switching the fibers in kasper, the different vlans, and there was difficulty connecting to the switch
+My team then came back from colo. The people in the server room reorganized cables, but did not reorganize the servers
+When juno went down there for the second time, it seemed that taldos made a mistake on boot because ITS SUPER OLD
+now there may be issues with kasper firewalls, and what can be pinged changes depending if the firewall is on or off, and colo might not recongize ipv6
+
+Scar — 02/20/2024 9:37 PM
+what needs to be done is:
+- get mirror, taldos, and kasper in ship shop shape
+- get the other servers in the servery moved around to our liking (it wont be the same as on the diagram because of issues of square vs circle holds for the racks)
+- get the ping bot down there with a server and possible that kvm over ip
+we will have to schedule another day to continue
+but then again, the work in cosi should never really ever be done
+<image src="../media/move1.jpg"  controls></image>
+<image src="../media/move2.jpg"  controls></image>
+
+Scar — 02/21/2024 1:28 PM
+Juno went down to colo. They switched the fibers on kasper on the config and rebooted taldos so that it didnt get stuck. Everything is good now 
+
+Scar — 02/22/2024 2:28 PM
+Took out ziltoid
+
+Scar — 02/25/2024 10:19 PM
+I didnt get a chance to put this all down in writing. This all happened on the 22nd and 23rd
+Its a break weekend and I wanted to finish moving around the servers to complete THE GREAT COSI MOVE OF 2024
+Going to complain a bit here, the person who said they would help me (because some of those servers are heavy) didnt show up. My other friend showed up later and they helped out (Peter). When I was alone, I had to resort to stacking books to help me hold things in place
+over the two days, I (a good amount by myself. but I should say and the friend on the first day, and the late person on the second day) moved the servers around
+the research machines were on the bottom. The student machines were on the top.
+The big thing to learn are the different types of rails, and also how different racks have different holds that can be used with different rails. ie. square holds/holes can be used with one type of rail, and there were two other holds that were both circles, but of different sizes. That is something to look for when moving things, because this did switch the initial plan
+
+Scar — 02/25/2024 10:26 PM
+today, I just got the docker for my website to host this all on built in docker and I pulled it on zones so that it would be on taldos. I would go on terminator and make it real, but I do not have the password on me and I have way to little energy to find it.
+
+Scar — 02/26/2024 11:06 AM
+going though my capstone paper, I learned that conditioned power means to supply a proper voltage (as well as other characteristics)
+
+Scar — Today at 12:09 AM
+Heck yeah I got a fist pump from Jeanna
