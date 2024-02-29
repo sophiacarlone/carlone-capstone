@@ -25,3 +25,4 @@
 - [March 2024](Mar24/summary.md)
     - [Logs](Mar24/Logs.md)    
 - [Extra Resources](extra.md)
+- [Acknowledgements](thanks.md)
