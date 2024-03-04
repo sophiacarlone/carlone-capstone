@@ -3,18 +3,18 @@ Scar — 04/03/2023 4:46 PM
 I should reset all the passwords
 
 Scar — 04/03/2023 4:47 PM
-Sadly, time got the better of me and I forgot somethings. What needs to happen is there needs to be a bridge in the vm host for the vms to connect so you can ssh in. You can look at hydra if you need an example.
+Sadly, time got the better of me and I forgot somethings. What needs to happen is there needs to be a bridge <b>(over ethernet ports)</b> in the vm host for the vms to connect so you can `ssh` in. You can look at hydra if you need an example.
 
-You should also be able to ssh into the vm if you are already at the host
+<b>(Notes to self)</b> You should also be able to ssh into the vm if you are already at the host
 create a vlan page on book
 
 Scar — 04/04/2023 1:42 PM
 hydra wasnt down before. I probably was the one who broke it a couple of weeks ago
 
 Scar — 04/12/2023 10:59 PM
-Couldn't get m3 out for the life of me
+Couldn't get m3 <b>(management switch)</b> out for the life of me
 Tried for over an hour and with two guys for help
-Had to cut my loses and just have m4 unscrewed so I can make progress
+Had to cut my loses and just have m4<b>(different management switch)</b>  unscrewed so I can make progress
 
 Scar — 04/12/2023 11:17 PM
 I put in the switch
@@ -28,7 +28,7 @@ ethernet uses rj-45, but is not rj-45
 
 Scar — 04/12/2023 11:41 PM
 find usb port, copy name, 
-screen usb-port 38400
+`screen usb-port 38400`
 
 Scar — 04/13/2023 12:19 AM
 Didn't work!
@@ -38,30 +38,30 @@ tried to just undo the bridge I made a while ago and it still not working
 its not the cable
 took out all comments, but that shouldnt work
 its so fucking slow
-it has a destination host unreachable
+it has a `destination host unreachable` result
 
 Scar — 04/13/2023 9:33 PM
 Hydra has no route to jesabelle but one to google. It can download updates
-need to check if it is getting it from mirror, I suspect not tho because it could not reach mirror before
+need to check if it is getting it <b>(packages)</b> from mirror, I suspect not tho because it could not reach mirror before
 I keep getting a connection time out
 
 Scar — 04/13/2023 9:42 PM
-ssh hydra        
-ssh: connect to host 128.153.145.42 port 13699: Connection timed out
-before, I went into the nftables for our firewall and saw that there was a hold poked, but for port 13699 on hydra, while hydra was still on the default of port 22
+`ssh hydra`        
+`ssh: connect to host 128.153.145.42 port 13699: Connection timed out`
+before, I went into the nftables for our firewall and saw that there was a hole poked, but for port 13699 on hydra, while hydra was still on the default of port 22
 
-going to man ssh on hydra shows where the config files are and that is where you can see in the sshd.config what port is is set at
+going to `man ssh` on hydra shows where the config files are and that is where you can see in the `sshd.config` what port is is set at
 
 Scar — 04/13/2023 9:50 PM
 I upgraded hydra, it restarted some services
-I got traceroute on hydra and it seemed to be able to connect to everything in one hop
+I got `traceroute`` on hydra and it seemed to be able to connect to everything in one hop
 I was able to ssh into ziltoid from hydra
 lets see, next steps is to try and get to hydra again. if not, this might be a firewall problem afterall
 
 Scar — 04/17/2023 6:37 PM
-tail -f /var/log/syslog
+`tail -f /var/log/syslog` <b>(A new comman learned to output the end of syslog and keep it refreshing)</b> 
 so I looked at hydra again to see why I cant ssh
-i was with another lab director: Peter
+i was with another lab member: Peter
 
 Scar — 04/17/2023 6:45 PM
 he told me about syslog, and apparently tail has a option called -f that means to constantly refresh
