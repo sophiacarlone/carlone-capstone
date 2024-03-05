@@ -2,11 +2,11 @@
 
 Scar — 03/02/2023 8:48 PM
 I wanna make a bot in the cosi server so that when something becomes unpingable it lets people know
-and an influxdb sight
-also, a lot of shit happened with the firewall going down, but I couldnt bring myself to help after I learned of a death in the family
+and an influxdb site
+also, a lot of shit happened with the firewall going down, but I couldnt bring myself to help after I learned of a death in the family <b>(good job to the others)</b>
 
 Scar — 03/07/2023 9:10 PM
-organize servers
+organize servers <b>(idea)</b>
 
 Scar — 03/08/2023 1:09 PM
 reading for literature review. I will be focused on network configurations and measurement based on the Jones - IT article
@@ -24,7 +24,7 @@ Scar — 03/08/2023 3:35 PM
 https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol
 
 Scar — 03/25/2023 9:25 PM
-ok, I just had this whole thing with making a vm for sc350 so let me recount
+ok, I just had this whole thing with making a vm for sc350 so let me recount <b>(I never  elaborated on this. This is briefly mentioned elsewhere in logs. There was two main issues, one was getting the vm connected to the internet, and the other was being able to `ssh` into the vm after it did receive internet connection. The first problem was with the brige configuration on hydra. At that point, Hydra was connected to both the private and public vlans, and this vm should only be on the private. The other problem stemmed from the UFW having port 22 for ssh closed)</b>
 
 Scar — 03/27/2023 5:22 PM
 ssh outside cosi is broken
