@@ -98,7 +98,7 @@ Scar — 02/25/2024 10:19 PM
 I didn't get a chance to put this all down in writing. This all happened on the 22nd and 23rd
 It's a break weekend and I wanted to finish moving around the servers to complete THE GREAT COSI MOVE OF 2024
 Going to complain a bit here, the person who said they would help me (because some of those servers are heavy) didn't show up on the first day. My other friend showed up later and they helped out. When I was alone, I had to resort to stacking books to help me hold things in place <b>(reminds me of January 2023 and I had to put Talos back into the rack alone)</b>
-over the two days, I (a good amount by myself. but I should say and the friend on the first day, and the late person on the second day) moved the servers around
+over the two days, I (a good amount by myself, but I should say and the friend on the first day, and the late person on the second day) moved the servers around
 the research machines were on the bottom. The student machines were on the top.
 The big thing to learn are the different types of rails, and also how different racks have different holds that can be used with different rails. ie. square holds/holes can be used with one type of rail, and there were two other holds that were both circles, but of different sizes. That is something to look for when moving things, because this did switch the initial plan
 
