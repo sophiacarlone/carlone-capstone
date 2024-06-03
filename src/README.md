@@ -9,7 +9,7 @@ Anyways, the short story of it was that the fiber switch died and there was no c
 <br>
 Why is there a development log? Well, It was the best way to keep track of all I did as I made this into my capstone project for the Clarkson Honors program. Now I will record it here to be in the appendix of the paper. It could be interesting for someone to read one day. Or myself.<br>
 <br>
-You may have already gotten the vibe of this already, but these are all my pure thoughts. There may be swearing. Have fun looking at this and I will attach my final capstone here as well <b>(TODO)</b>.<br>
+You may have already gotten the vibe of this already, but these are all my pure thoughts. There may be swearing. Have fun looking at this and I will attach my final capstone [here](https://github.com/sophiacarlone/carlone-capstone/blob/main/src/media/Honors_Capstone_-_Carlone_Final.pdf) as well.<br>
 <br>
 I am not the only person who worked on this, and I appreciate everyone who did. I tried to make sure things get done, but I also tried not to be too pushy, especially after I gave up my lab directorship and other people were becoming more and more willing to participate. I believe a lot more cool stuff could be done, but you will see what held us back in the writing. <br>
 <br>
