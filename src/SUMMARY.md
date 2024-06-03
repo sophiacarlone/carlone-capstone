@@ -24,5 +24,7 @@
     - [Logs](Feb24/Logs.md)
 - [March 2024](Mar24/summary.md)
     - [Logs](Mar24/Logs.md)    
+- [April 2024](Apr24/summary.md)
+    - [Logs](Apr24/Logs.md)    
 - [Extra Resources](extra.md)
 - [Acknowledgements](thanks.md)
